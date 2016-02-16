@@ -7,13 +7,14 @@ layout: default
   {% if page.author %}
   <span class="author"> by {{ page.author }}</span>
   {% endif %}
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+
 
   {% include disqus.html %}
 </article>
