@@ -1,0 +1,26 @@
+# Main settings
+
+# Name of your site (displayed in the header)
+name: Greebly Bits
+# Short bio or description (displayed in the header)
+description: "We don't forget the little details when seeing the big picture"
+email: contact@greeblybits.com
+# URL of your avatar or profile pic
+logo: '/assets/img/logo-square.png'
+
+css: '/assets/css/'
+img: '/assets/img/'
+js: '/assets/js/'
+
+#--------------------------------
+# Navigation Section
+
+menu:
+- {name: Blog, url: '/'}
+- {name: About, url: '/about/'}
+
+
+#--------------------------------
+# About Section
+
+blurb: <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur <a href="">adipiscing elit</a>. Nunc faucibus vitae nisi nec lacinia. Praesent nec maximus orci, nec consectetur dolor. Maecenas aliquet ligula id tincidunt malesuada.</p>
