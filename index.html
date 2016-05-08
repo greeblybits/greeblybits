@@ -1,24 +1,33 @@
 ---
-layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.data.settings.name }} – {{ site.data.settings.description }}</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      {% if post.author %}
-      <div class="author">{{ post.author }}</div>
-      {% endif %}
-      <div class="date">
-          {{ post.date | date: "%B %e, %Y" }}
-      </div>
+    {% include meta.html %}
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.data.settings.css }}/main.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.data.settings.name }} - {{ site.data.settings.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  </head>
+
+  <body class="landing">
+    {% include starfield.html %}
+    <div class="hero-container">
+        <a class="hero-logo" href="{{ site.baseurl }}/blog/">Greebly Bits</a>
+        <div class="hero-text">We don't forget the little details when</div>
+        <div class="hero-text">seeing the big picture.</div>
+        <br>
+        <div class"hero-contact">coming soon</div>
+        <a class="hero-contact" href="mailto:{{ site.data.settings.email }}">contact us</a>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>

@@ -6,7 +6,7 @@ name: Greebly Bits
 description: "We don't forget the little details when seeing the big picture"
 email: contact@greeblybits.com
 # URL of your avatar or profile pic
-logo: '/assets/img/logo-square.png'
+logo: '/assets/img/logo-square.png' # TODO: make a couple size-versions of this. It loads too slowly at full res
 
 css: '/assets/css/'
 img: '/assets/img/'
@@ -16,7 +16,7 @@ js: '/assets/js/'
 # Navigation Section
 
 menu:
-- {name: Blog, url: '/'}
+- {name: Blog, url: '/blog/'}
 - {name: About, url: '/about/'}
 
 

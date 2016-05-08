@@ -1,0 +1,31 @@
+.star {
+  background-color: #eee;
+  border-radius: 50%;
+  position: absolute;
+
+  .lvl1 & {
+    height: 1px;
+    width: 1px;
+  }
+
+  .lvl2 & {
+    height: 2px;
+    width: 2px;
+  }
+
+  .lvl3 & {
+    background-color: #888;
+    height: 3px;
+    width: 3px;
+  }
+}
+
+@for $i from 1 through 3 {
+    @for $j from 1 through 100 {
+      .lvl#{$i} .star:nth-child(#{$j}) {
+        top: random(100) + vh;
+        left: random(100) + vw;
+        opacity: ($j) / 100 + .5;
+      }
+    }
+}
