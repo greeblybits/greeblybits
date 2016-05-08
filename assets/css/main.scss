@@ -26,7 +26,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 740px;
+    max-width: 760px;
     padding: 0 10px;
     width: 100%;
 }
@@ -111,6 +111,14 @@ img {
     max-width: 100%;
 }
 
+hr {
+    border: 0;
+    height: 0;
+    margin: 15px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid $darkGray;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
     max-width: none;
@@ -159,7 +167,7 @@ img {
 //
 
 .wrapper-masthead {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .masthead {
@@ -289,6 +297,17 @@ nav {
 footer {
       padding: 20px 0;
       text-align: center;
+}
+
+/* Set a size for our map container, the Google Map will take up 100% of this container */
+#map {
+    width: 740px;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.caption {
+    font-size: smaller;
 }
 
 .landing {
